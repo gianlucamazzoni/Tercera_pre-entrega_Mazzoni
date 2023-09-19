@@ -1,0 +1,18 @@
+{% extends 'padre.html' %}
+
+
+{% block blockname %}
+
+
+    <p>Resultado de la busqueda de la banda</p>
+
+    {% if banda %}
+        <ul>
+            {% for banda in Banda_oCompositor_musical %}
+                <li>{{banda}}</li>
+            {% endfor %}
+
+        </ul>
+    {% endif %}
+    
+{% endblock blockname %}
