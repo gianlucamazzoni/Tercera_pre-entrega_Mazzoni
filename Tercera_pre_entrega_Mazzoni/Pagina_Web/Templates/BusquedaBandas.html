@@ -1,0 +1,10 @@
+{% extends 'padre.html' %}
+
+{% block ContenidoQueCambia %}
+    <form action="{% url 'Buscar' %}" method="get">
+        <p>Banda_o_compositor_musical: <input type="text" name="Banda o compositor musical"></p>
+        <button type="submit">Enviar </button>
+    </form>
+
+{% endblock ContenidoQueCambia %}
+    

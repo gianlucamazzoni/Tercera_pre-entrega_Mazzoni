@@ -1,0 +1,14 @@
+{% extends 'padre.html' %}
+
+
+{% block ContenidoQueCambia %}
+    
+    <form action="{% url 'PopFormulario' %}" method="post"> {% csrf_token %}
+        
+        <p>Banda o compositor musical: <input type="text" name="banda o compositor musical"></p>
+        <p>Decada: <input type="number" name="Decada"></p>
+
+        <button type="submit"> Enviar</button>
+    </form>
+
+{% endblock ContenidoQueCambia %}
